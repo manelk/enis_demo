@@ -4,7 +4,7 @@ In your local and using your terminal write the following commands:
 
     git init
 
-    git add README.md
+    git add .
 
     git commit -m "first commit"
 
@@ -12,5 +12,5 @@ In your local and using your terminal write the following commands:
 
     /// 👉 REPLACE BY YOUR REPOSITORY LINK
     git remote add origin https://github.com/manelk/enis_demo.git
-    
+
     git push -u origin main

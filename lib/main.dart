@@ -38,10 +38,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Align(alignment: Alignment.center, child: Text(widget.title)),
       ),
       body: SizedBox(
-        width: MediaQuery.of(context).size.width,
+        width: MediaQuery.of(context).size.width * 0.8,
         height: MediaQuery.of(context).size.height * 0.3,
         child: Card(
-          color: Colors.brown.shade100,
+          color: Colors.grey.shade200,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
@@ -50,8 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 50,
-                backgroundColor: Colors.blue,
+                radius: 40,
                 child: Image.network(
                   "https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png",
                   errorBuilder:
@@ -86,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       ),
                     ),
-      
+
                     RichText(
                       text: TextSpan(
                         children: const <TextSpan>[
@@ -104,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       ),
                     ),
-      
+
                     RichText(
                       text: TextSpan(
                         children: const <TextSpan>[
@@ -122,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       ),
                     ),
-      
+
                     RichText(
                       text: TextSpan(
                         children: const <TextSpan>[
@@ -140,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       ),
                     ),
-      
+
                     RichText(
                       text: TextSpan(
                         children: const <TextSpan>[
