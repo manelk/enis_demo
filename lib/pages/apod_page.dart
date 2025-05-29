@@ -16,6 +16,7 @@ class ApodPage extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             print("snapshot.data: ${snapshot.data}");
+            print("snapshot.data: ${snapshot.data?.statusCode}");
             return ApodWidget(title: "hello", explanation: "hello", url: "");
           } else if (snapshot.hasError) {
             print("snapshot.hasError: ${snapshot.error}");
