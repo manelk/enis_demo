@@ -14,13 +14,17 @@ class ApodWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Column(
-        children: [
-          Text("Title : $title"),
-          Text("Explanation: $explanation"),
-          Image.network(url),
-        ],
+    return SizedBox(
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
+      child: Card(
+        child: Column(
+          children: [
+            Text("Title : $title"),
+            Text("Explanation: $explanation"),
+            Image.network(url),
+          ],
+        ),
       ),
     );
   }

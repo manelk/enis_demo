@@ -9,21 +9,22 @@ class ApodPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Align(alignment: Alignment.center, child: Text("hello")),
+        title: Align(alignment: Alignment.center, child: Text("APOD Page")),
       ),
       body: FutureBuilder(
         future: ApodService().fetchApod(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            print("snapshot.data: ${snapshot.data}");
-            print("snapshot.data: ${snapshot.data?.statusCode}");
-            return ApodWidget(title: "hello", explanation: "hello", url: "");
+            return ApodWidget(
+              title: snapshot.data!.title ?? "default value",
+              explanation:
+                  snapshot.data!.explanation ?? "default explanation value",
+              url: snapshot.data!.hdurl ?? "default url value",
+            );
           } else if (snapshot.hasError) {
-            print("snapshot.hasError: ${snapshot.error}");
             return Text("ERROR: no data found");
           } else {
-            print("snapshot.connectionState: ${snapshot.connectionState}");
-            return CircularProgressIndicator();
+            return Center(child: CircularProgressIndicator());
           }
         },
       ),

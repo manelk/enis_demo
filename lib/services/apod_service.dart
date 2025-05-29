@@ -10,6 +10,9 @@ class ApodService {
     );
 
     if (response.statusCode == 200) {
+      /// ADD THIS COMMENT: THROW IN CASE YOU WANT TO TRIGGER ERROR
+      /// throw Exception('Failed to load album');
+      /// REMOVE THE return ApodModel.fromJson
       return ApodModel.fromJson(
         jsonDecode(response.body) as Map<String, dynamic>,
       );
