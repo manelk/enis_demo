@@ -1,3 +1,4 @@
+// this link: https://javiercbk.github.io/json_to_dart/
 class ApodModel {
   String? copyright;
   String? date;
