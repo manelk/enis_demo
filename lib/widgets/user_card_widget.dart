@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:new_app/pages/country_page.dart';
 import 'package:new_app/widgets/text_card_user.dart';
 
 class UserCard extends StatelessWidget {
