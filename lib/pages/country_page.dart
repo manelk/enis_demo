@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:new_app/pages/my_home_page.dart';
 
 class CountryPage extends StatefulWidget {
   const CountryPage({super.key});
@@ -48,6 +49,18 @@ class _CountryPageState extends State<CountryPage> {
                 });
               },
               child: Text("Get random image"),
+            ),
+
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const MyHomePage(title: "hello home page"),
+                  ),
+                );
+              },
+              child: Text("Go to home page"),
             ),
           ],
         ),
