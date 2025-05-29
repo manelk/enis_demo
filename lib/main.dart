@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:new_app/pages/apod_page.dart';
-import 'package:new_app/pages/country_page.dart';
 
 void main() {
   runApp(const MyApp());

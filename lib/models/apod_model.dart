@@ -1,4 +1,6 @@
-// Link to generate model: https://javiercbk.github.io/json_to_dart/
+// Link to generate model: https://javiercbk.github.io/json_to_dart/ :> this is a public archive
+// Use this next time: https://dart-quicktype.netlify.app/
+
 class ApodModel {
   String? copyright;
   String? date;
@@ -23,12 +25,12 @@ class ApodModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['copyright'] = this.copyright;
-    data['date'] = this.date;
-    data['explanation'] = this.explanation;
-    data['hdurl'] = this.hdurl;
-    data['title'] = this.title;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['copyright'] = copyright;
+    data['date'] = date;
+    data['explanation'] = explanation;
+    data['hdurl'] = hdurl;
+    data['title'] = title;
     return data;
   }
 }
