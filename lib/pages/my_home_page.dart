@@ -13,13 +13,7 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Align(alignment: Alignment.center, child: Text(title)),
       ),
-      body: Center(
-        child: SizedBox(
-          width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.3,
-          child: UserCard(),
-        ),
-      ),
+      body: UserCard(),
     );
   }
 }
